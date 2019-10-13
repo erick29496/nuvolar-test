@@ -8,7 +8,7 @@ import {User} from '../models/user';
 export class GithubService {
 
   private apiSearchUsersUrl = 'https://api.github.com/search/users?q=';
-  private tokenUrl = '&access_token=NON-COMMITED-ACCESS-TOKEN';
+  private tokenUrl = '&access_token=778d2db49822f2dfdabf49c62f8a08ba5e6fc254';
   private apiGetUserDetailUrl = 'https://api.github.com/users/';
   private apiGetUserRepositoriesUrl = '/repos';
   private apiGetUserFollowersUrl = '/followers';
@@ -19,7 +19,7 @@ export class GithubService {
   }
 
   searchByUsername(value: string): Observable<Array<User>> {
-    return this.http.get(this.apiSearchUsersUrl + value)
+    return this.http.get(this.apiSearchUsersUrl + value + this.tokenUrl)
       .pipe(map(response =>
         response['items'] ? response['items'].map(plainUser => new User(plainUser)) : [])
       );
