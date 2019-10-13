@@ -1,5 +1,23 @@
 # NuvolarApp
 
+The link of Nuvolar App: [https://nuvolar-test-923c1.web.app](https://nuvolar-test-923c1.web.app/)
+
+This application works as follows: 
+
+Firstly, you can switch between default and dark theme by clicking on the buttons located on the right side of the navigation bar.
+
+Then, you can search in the search bar the github users by username. As you type a username, the result will appear automatically bellow the search bar.
+
+Once you find the desired user, you can click on him in order to go to his profile. In there, you can see his detail information and also, his followers and repositories. Also, you can navigate to his Github profile, his blog and to any follower or repository, by clicking on them.
+
+Finally, you can return to the main page by clicking on the title of the app (Nuvolar App) located in the navigation bar.
+
+Google’s PageSpeed results here:
+
+![Captura de pantalla 2019-10-14 a las 0.06.58](/Users/eric/Desktop/Captura de pantalla 2019-10-14 a las 0.06.58.png)
+
+![Captura de pantalla 2019-10-14 a las 0.07.14](/Users/eric/Desktop/Captura de pantalla 2019-10-14 a las 0.07.14.png)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
 
 ## Development server
