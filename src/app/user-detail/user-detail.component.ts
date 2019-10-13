@@ -22,7 +22,6 @@ export class UserDetailComponent implements OnInit {
 
   getUser() {
     this.user = this.githubService.getUserSelected();
-    console.log(this.user);
     const username = this.route.snapshot.paramMap.get('username');
     this.githubService.getUserDetail(username).subscribe(
       user => {
