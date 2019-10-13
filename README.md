@@ -14,9 +14,9 @@ Finally, you can return to the main page by clicking on the title of the app (Nu
 
 Google’s PageSpeed results here:
 
-![Captura de pantalla 2019-10-14 a las 0.06.58](/Users/eric/Desktop/Captura de pantalla 2019-10-14 a las 0.06.58.png)
+![Page Speed Mobile](https://raw.githubusercontent.com/erick29496/nuvolar-test/master/PageSpeedMobile.png)
 
-![Captura de pantalla 2019-10-14 a las 0.07.14](/Users/eric/Desktop/Captura de pantalla 2019-10-14 a las 0.07.14.png)
+![Page Speed Pc](https://raw.githubusercontent.com/erick29496/nuvolar-test/master/PageSpeedPc.png)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
 
