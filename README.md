@@ -6,7 +6,7 @@ This application works as follows:
 
 Firstly, you can switch between default and dark theme by clicking on the buttons located on the right side of the navigation bar.
 
-Then, you can search in the search bar the github users by username. As you type a username, the result will appear automatically bellow the search bar.
+Then, you can search in the search bar the github users by username. As you type a username, the result will appear automatically bellow the search bar. The result is paginated showing 10 items per page.
 
 Once you find the desired user, you can click on him in order to go to his profile. In there, you can see his detail information and also, his followers and repositories. Also, you can navigate to his Github profile, his blog and to any follower or repository, by clicking on them.
 
