@@ -1,0 +1,63 @@
+<div *ngIf="user">
+
+  <div class="row justify-content-between ">
+    <div class="col-sm-4">
+      <img class="profile-img" src="{{user?.imgUrl}}">
+      <h3 class="text-center">{{user?.completeName}}</h3>
+      <h4 class="text-center">{{user?.name}}</h4>
+    </div>
+    <div class="col-sm-6">
+      <h4 class="text-center">User details</h4>
+      <table class="table">
+        <tbody>
+        <tr>
+          <td>Email</td>
+          <td>{{user?.email}}</td>
+        </tr>
+        <tr>
+          <td>Location</td>
+          <td>{{user?.location}}</td>
+        </tr>
+        <tr>
+          <td>Followers</td>
+          <td>{{user?.followersNum}}</td>
+        </tr>
+        <tr>
+          <td>Following</td>
+          <td>{{user?.followingNum}}</td>
+        </tr>
+        <tr>
+          <td>Repositories</td>
+          <td>{{user?.reposNum}}</td>
+        </tr>
+        <tr>
+          <td>Blog</td>
+          <td>{{user?.blog}}</td>
+        </tr>
+        <tr>
+          <td>Url</td>
+          <td><a href="{{user?.url}}">{{user?.url}}</a></td>
+        </tr>
+
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+
+
+  <div class="row" style="margin-top: 20px">
+    <div class="col-6">
+      <h4>Followers</h4>
+      <div *ngFor="let follower of user.followers$ | async">
+        <a href="{{follower?.html_url}}">{{follower?.login}}</a>
+      </div>
+    </div>
+    <div class="col-6">
+      <h4>Repositories</h4>
+      <div *ngFor="let repo of user.repos$ | async">
+        <a href="{{repo?.html_url}}">{{repo?.name}}</a>
+      </div>
+    </div>
+  </div>
+</div>

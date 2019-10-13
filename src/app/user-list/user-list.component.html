@@ -1,0 +1,15 @@
+<div *ngFor="let user of getUserListPaginated()" class="row user-info" (click)="navigatesUserDetail(user)">
+  <div class="col-3 col-sm-1">
+    <img class="profile-img" src="{{user?.imgUrl}}">
+  </div>
+  <div class="col-9 col-sm-11">
+    {{user?.name}}
+  </div>
+</div>
+
+<ngb-pagination *ngIf="userList?.length > 0"
+                [(page)]="page"
+                [pageSize]="pageSize"
+                [collectionSize]="userList?.length"
+                (pageChange)="onPageChange($event)">
+</ngb-pagination>
